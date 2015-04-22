@@ -1,5 +1,5 @@
 #include <string>
-#include "../sim_main.h"
+#include "../include/sim_main.h"
 
 class Kernel;
 

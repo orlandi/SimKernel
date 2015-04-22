@@ -100,8 +100,8 @@ install: lib
 	mkdir -p /usr/local/include/sim
 	install -m 0644 include/* /usr/local/include/sim/
 
-tutorial_sim_iterated: $(OBJBASE) tutorial/hello_world_sim_iterated.cpp
-	$(CC) $(CFLAGS) tutorial/hello_world_sim_iterated.cpp $(OBJBASE) -o tutorial_sim_iterated $(LDFLAGS)
+tutorial_sim_iterated: $(OBJS) tutorial/hello_world_sim_iterated.cpp
+	$(CC) $(CFLAGS) tutorial/hello_world_sim_iterated.cpp $(OBJS) -o tutorial/tutorial_sim_iterated $(LDFLAGS)
 
 # Auto genereate Dependencies
 CFLAGS += -MD
